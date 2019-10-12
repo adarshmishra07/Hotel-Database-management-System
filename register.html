@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel management System </title>
+</head>
+
+<body bgcolor="lightyellow">
+    <div class="container">
+        <center><h1>A-Cube Hotel</h1>
+            Opposite to Bhool Bhulaiya<br>Jaadoo nagar Mumbai.</center>
+        <hr>
+        <div class="form" style="line-height: 30px">
+            <h2>New Customer:  </h2>
+            <form class="dbms" style="line-height: 40px" action="main.php" method="post">
+        
+                Name: <input type="name" name="name" required><br>
+                Mobile number : <input type="text" name="mob" maxlength="10" required><br>
+                Email-id : <input type="email" name="email" required><br>
+                No. of Members : <input type="number" name="nom" required><br>
+                Room type : <select name="room" >
+                    <option value="101">Single Simple</option>
+                    <option value="102">Double Simple</option>
+                    <option value="103">Deluxe Single </option>
+                    <option value="104">Deluxe Double</option>
+                </select><br>
+                Check-in Date and Time : <input type="date" name="chkin_date" required> <br>
+                Check-out Date and Time : <input type="date" name="chkout_date" required><br>
+                Mode of Payment : <input type="radio" name="mop" value="cash" checked> Cash  
+                <input type="radio" name="mop" value="online"> Online<br>
+                <center><input type="submit" value="SUBMIT DETAILS"></center>
+               
+            </form>
+            
+        </div>
+    </div>
+</body>
+
+</html>
